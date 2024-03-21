@@ -17,6 +17,9 @@ func Foo() error {
 
 func main() {
 	err := Foo()
+	// выведет nil
 	fmt.Println(err)
+	// Поскольку err имеет тип *os.PathError и его значение не nil (т.е. он содержит нулевой указатель),
+	// сравнение err == nil возвращает false.
 	fmt.Println(err == nil)
 }

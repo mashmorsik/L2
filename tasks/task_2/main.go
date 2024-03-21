@@ -49,7 +49,7 @@ func UnpackString(str string) (string, error) {
 			sb.WriteString(string(first))
 		}
 	}
-
+	
 	last := runes[len(runes)-1]
 	if !unicode.IsDigit(last) {
 		sb.WriteString(string(last))
